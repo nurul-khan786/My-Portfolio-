@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nurul - Developer Portfolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: rgb(8, 8, 44);
+        color: white;
+        border: 5px solid rgba(102, 76, 9, 0.779);
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 90px;
+        background-color: rgb(17, 17, 54);
+        border: 5px double black;
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(86, 73, 51);
+        font-size: 1.03rem;
+      }
+      .left {
+        font-size: 1.6rem;
+        color: rgb(102, 121, 126);
+      }
+
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        margin: 130px 0;
+        align-items: center;
+      }
+      .firstSection > div {
+        width: 37%;
+      }
+      .leftSection {
+        font-size: 3rem;
+      }
+      .leftSection .buttons {
+        padding: 50px 0;
+      }
+      .leftSection .btn {
+        padding: 12px;
+        background-color: #636373;
+        color: rgb(27, 22, 127);
+        border: 5px solid rgba(255, 255, 255, 0.425);
+        border-radius: 12px;
+        font-size: 28px;
+        cursor: pointer;
+      }
+
+      .leftSection .buttons :hover {
+        border: 4px solid gold;
+        font-size: 2rem;
+        color: goldenrod;
+      }
+      .rightSection img {
+        width: 80%;
+      }
+      .purple {
+        color: blueviolet;
+      }
+      .text-gray {
+        color: gray;
+      }
+      #element {
+        color: blueviolet;
+      }
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+      main hr {
+        border: 0;
+        background-color: #9c97f1;
+        height: 1.2px;
+        margin: 60px 84px;
+      }
+
+      .secondSection {
+        margin: 60px 84px;
+        text-align: center;
+      }
+
+      .secondSection .text-gray {
+        color: gray;
+        font-size: 1.8rem;
+      }
+
+      .secondSection h1 {
+        margin-bottom: 30px;
+        font-size: 1.8rem;
+        color: rgb(193, 167, 167);
+      }
+
+      .secondSection .box {
+        background-color: rgb(200, 128, 167);
+        width: 87vw;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        border-radius: 5px;
+      }
+
+      .skill {
+        background-color: rgba(199, 187, 187, 0.988);
+        width: 14%;
+        margin: 20px 0;
+        text-align: center;
+        border-radius: 5px;
+      }
+
+      .skill-image {
+        width: 100px;
+        height: auto;
+        margin-bottom: 10px;
+      }
+
+      .skill-title {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .skill-desc {
+        font-size: 15px;
+        color: gray;
+        line-height: 1.4;
+      }
+
+      footer {
+        background-color: #090619;
+      }
+      .footer {
+        display: flex;
+        padding: 23px 122px;
+        justify-content: space-evenly;
+      }
+      .footer ul {
+        list-style: none;
+        color: silver;
+      }
+      footer .footer-first {
+        font-size: 1.2rem;
+      }
+
+      .footer > div {
+        width: 223px;
+      }
+      footer .footer-rights {
+        color: gray;
+        text-align: center;
+        padding: 34px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Nurul's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="index.html">Home </a></li>
+            <li><a href="Portfolio_about.html">About Me </a></li>
+            <li><a href="Portfolio_services.html">Services </a></li>
+            <li><a href="Portfolio_projects.html">Projects </a></li>
+            <li><a href="Portfolio_contact.html">Contact me </a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, My name is <span class="purple"> Nurul Khan </span>
+          <div>And I am a passionate</div>
+          <span id="element"></span>
+          <div class="buttons">
+            <button class="btn">Download Resume</button>
+            <button class="btn">LinkedIn</button>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="pt.png" alt="" />
+        </div>
+      </section>
+
+      <hr />
+
+      <section class="secondSection">
+        <span class="text-gray">What I have done so far</span>
+        <h1>My Skills</h1>
+
+        <div class="box">
+          <div class="skill">
+            <img class="skill-image" src="DSA.jpg" alt="DSA in Java" />
+            <div class="skill-title">DSA in Java</div>
+            <div class="skill-desc">
+              Solid foundation in data structures such as arrays, linked lists,
+              stacks, queues, trees, and graphs. Understanding of algorithmic
+              concepts including sorting (e.g., bubble sort, quicksort) and
+              searching (e.g., binary search). Ability to implement and optimize
+              algorithms for efficient problem-solving and performance.
+            </div>
+          </div>
+
+          <div class="skill">
+            <img class="skill-image" src="javalogo.png" alt="Java" />
+            <div class="skill-title">Java</div>
+            <div class="skill-desc">
+              Proficient in Java, including core object-oriented principles such
+              as classes, inheritance, polymorphism, and encapsulation.
+              Experienced in writing efficient code, managing memory, and
+              understanding Java libraries and APIs. Developed basic console and
+              GUI applications, demonstrating solid grasp of Java's syntax and
+              structure.
+            </div>
+          </div>
+
+          <div class="skill">
+            <img class="skill-image" src="html.png" alt="HTML" />
+            <div class="skill-title">HTML</div>
+            <div class="skill-desc">
+              Skilled in crafting well-structured and semantic web pages using
+              HTML5. Knowledgeable in creating accessible content, incorporating
+              multimedia elements, and using HTML tags effectively to ensure a
+              clean and organized webpage structure.
+            </div>
+          </div>
+
+          <div class="skill">
+            <img class="skill-image" src="css.png" alt="CSS" />
+            <div class="skill-title">CSS</div>
+            <div class="skill-desc">
+              Competent in designing responsive and visually appealing web
+              layouts with CSS3. Experienced in using selectors, properties, and
+              values to style web elements. Familiar with advanced techniques
+              such as Flexbox and Grid to create adaptable and attractive
+              interfaces.
+            </div>
+          </div>
+
+          <div class="skill">
+            <img class="skill-image" src="javascript.png" alt="JavaScript" />
+            <div class="skill-title">JavaScript</div>
+            <div class="skill-desc">
+              Capable of enhancing web pages with basic JavaScript
+              functionality. Proficient in manipulating the DOM, handling
+              events, and implementing simple algorithms to add interactivity
+              and improve user experience on websites.
+            </div>
+          </div>
+
+          <div class="skill">
+            <img class="skill-image" src="reactjs.png" alt="React JS" />
+            <div class="skill-title">React JS</div>
+            <div class="skill-desc">
+              I have gained hands-on experience with React.js, developing
+              dynamic and responsive web applications. My commitment to
+              continuous learning and improvement drives me to stay updated with
+              the latest trends and best practices in React.js.I am eager to
+              apply my React.js skills and continue growing in a professional
+              setting
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Nurul's Developer Portfolio</h3>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li>Help</li>
+            <li>About</li>
+            <li>More</li>
+          </ul>
+        </div>
+        <div class="footer-third">
+          <ul>
+            <li>Instagram</li>
+            <li>Whatsapp</li>
+            <li>SnapChat</li>
+          </ul>
+        </div>
+        <div class="footer-fourth">
+          <ul>
+            <li>LinkedIn</li>
+            <li>CV</li>
+            <li>service</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-rights">
+        Copyright &#169; nurulsportfolio.com | All rights reserved
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["front-end Developer", "back-end Developer", "Web developer"],
+        typeSpeed: 70,
+      });
+    </script>
+    <script src="portfolio.js"></script>
+  </body>
+</html>
