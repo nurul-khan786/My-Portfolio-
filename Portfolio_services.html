@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: rgb(8, 8, 44);
+        color: white;
+        border: 5px solid rgba(102, 76, 9, 0.779);
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 90px;
+        background-color: rgb(17, 17, 54);
+        border: 5px double black;
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(86, 73, 51);
+        font-size: 1.03rem;
+      }
+      .left {
+        font-size: 1.6rem;
+        color: rgb(102, 121, 126);
+      }
+
+      #services {
+        background-color: rgb(8, 8, 44);
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      h2 {
+        text-align: center;
+        color:  #ba7233;
+        margin-top: 40px;
+        margin-bottom: 65px;
+        font-size: 2.5rem;
+        font-family: sans-serif;
+      }
+
+      .service-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .service-item {
+        background: #000000;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .service-item p{
+        color: grey;
+      }
+
+      .service-item h3 {
+        margin-top: 0;
+        color:  #ba7233;
+      }
+
+      .more-info-btn {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+      }
+
+      .info-content {
+        display: none;
+        margin-top: 10px;
+        color: #666;
+      }
+
+      .info-content p {
+        margin: 0;
+      }
+
+      footer {
+        background-color: #090619;
+      }
+      .footer {
+        display: flex;
+        padding: 23px 122px;
+        justify-content: space-evenly;
+      }
+      .footer ul {
+        list-style: none;
+        color: silver;
+      }
+      footer .footer-first {
+        font-size: 1.2rem;
+      }
+
+      .footer > div {
+        width: 223px;
+      }
+      footer .footer-rights {
+        color: gray;
+        text-align: center;
+        padding: 34px 0;
+      }
+    </style>
+    <header>
+      <nav>
+        <div class="left">Nurul's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="index.html">Home </a></li>
+            <li><a href="Portfolio_about.html">About Me </a></li>
+            <li><a href="Portfolio_services.html">Services </a></li>
+            <li><a href="Portfolio_projects.html">Projects </a></li>
+            <li><a href="Portfolio_contact.html">Contact me </a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="services">
+        <div class="container">
+          <h2>Services</h2>
+          <div class="service-list">
+            <div class="service-item">
+              <h3>Web Development</h3>
+              <p>
+                Building responsive and dynamic websites using HTML, CSS, and
+                JavaScript.
+              </p>
+              <button
+                class="more-info-btn"
+                onclick="showMoreInfo('web-development')"
+              >
+                More Info
+              </button>
+              <div id="web-development" class="info-content">
+                <p>
+                  Proficient in creating websites with modern frameworks and
+                  libraries. Experience with front-end and back-end development.
+                </p>
+              </div>
+            </div>
+            <div class="service-item">
+              <h3>Portfolio Creation</h3>
+              <p>
+                creating personalized potfolio websites for other students or
+                professionals who need an online presence.
+              </p>
+              <button
+                class="more-info-btn"
+                onclick="showMoreInfo('portfolio-creation')"
+              >
+                More Info
+              </button>
+              <div id="portfolio-creation" class="info-content">
+                <p>
+                  I design personalized portfolio websites that showcase your
+                  skills, projects and achievements. Using HTML, CSS and
+                  JavaScript, I create visually appealing and easy-to-navigate
+                  portfolios that help you stand out and make a lasting
+                  impression.
+                </p>
+              </div>
+            </div>
+            <div class="service-item">
+              <h3>Software Development</h3>
+              <p>
+                Designing and developing software solutions to meet specific
+                needs.
+              </p>
+              <button
+                class="more-info-btn"
+                onclick="showMoreInfo('software-development')"
+              >
+                More Info
+              </button>
+              <div id="software-development" class="info-content">
+                <p>
+                  Skilled in software engineering principles and methodologies.
+                  Able to develop software applications from concept to
+                  deployment.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-item">
+              <h3>front-end Development</h3>
+              <p>
+                Creating responsive as well as intractive website using HTML,
+                CSS and JavaScript.
+              </p>
+              <button
+                class="more-info-btn"
+                onclick="showMoreInfo('front-end-development')"
+              >
+                More Info
+              </button>
+              <div id="front-end-development" class="info-content">
+                <p>
+                  I specialize in creating responsive and intractive web pages
+                  that provide users with a seamless experience. By utilizing
+                  HTML, CSS, and JavaScript, I bring designs to life, ensuring
+                  that your website is not only visually appealing but also
+                  functional and user-frindly across all devices.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Nurul's Developer Portfolio</h3>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li>Help</li>
+            <li>About</li>
+            <li>More</li>
+          </ul>
+        </div>
+        <div class="footer-third">
+          <ul>
+            <li>Instagram</li>
+            <li>Whatsapp</li>
+            <li>SnapChat</li>
+          </ul>
+        </div>
+        <div class="footer-fourth">
+          <ul>
+            <li>LinkedIn</li>
+            <li>CV</li>
+            <li>service</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-rights">
+        Copyright &#169; nurulsportfolio.com | All rights reserved
+      </div>
+    </footer>
+
+    <script>
+      function showMoreInfo(serviceId) {
+        const infoContent = document.getElementById(serviceId);
+        if (infoContent.style.display === "block") {
+          infoContent.style.display = "none";
+        } else {
+          infoContent.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>

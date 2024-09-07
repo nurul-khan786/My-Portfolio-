@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<style>
+       * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: rgb(8, 8, 44);
+        color: white;
+        border: 5px solid rgba(102, 76, 9, 0.779);
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 90px;
+        background-color: rgb(17, 17, 54);
+        border: 5px double black;
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(86, 73, 51);
+        font-size: 1.03rem;
+      }
+      .left {
+        font-size: 1.6rem;
+        color: rgb(102, 121, 126);
+      }
+      .upper {
+        font-size: 2.6rem;
+        color:#ba7233;
+        padding-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 25px;
+        
+      }
+      .main{
+        margin: 200px 100px;
+        padding: 100px 100px;
+      }
+      .main ul {
+        display: flex;
+        justify-content: baseline;
+      }
+      .main ul li {
+        list-style: none;
+        margin: 0 63px;
+      }
+      .main ul li a {
+        text-decoration: none;
+        color: rgba(192, 192, 192, 0.632);
+      }
+      .main ul li img{
+        width: 90px;
+      }
+      .main ul li a:hover {
+        color: rgba(27, 97, 217, 0.632);
+        font-size: 1.1rem;
+      }
+      .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      button{
+        width: 5.5rem;
+        height: 2.3rem;
+        border: 3px solid rgb(0, 0, 0);
+        background-color: rgba(130, 131, 131, 0.682);
+        color: beige;
+        border-radius: 20px;
+        margin-bottom: 25px;
+        
+      }
+      button a{
+        text-decoration: none;
+        color: rgb(65, 16, 16);
+      }
+
+      footer{
+        background-color: #090619;
+      }
+      .footer{
+        display: flex;
+        padding: 23px 122px;
+        justify-content: space-evenly;
+      }
+      .footer ul{
+        list-style: none;
+        color: silver;
+      }
+      footer .footer-first{
+          font-size: 1.2rem;
+      }
+
+      .footer > div{
+        width: 223px;
+      }
+      footer .footer-rights{
+        color: gray;
+        text-align: center;
+        padding: 34px 0;
+      }
+</style>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">Nurul's Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="index.html">Home </a></li>
+          <li><a href="Portfolio_about.html">About Me </a></li>
+          <li><a href="Portfolio_services.html">Services </a></li>
+    <!-- <li><a href="c:\Users\nurul\OneDrive\Desktop\Projects.png">Projects </a></li> -->
+          <li><a href="Portfolio_projects.html">Projects </a></li>  
+          <li><a href="Portfolio_contact.html">Contact me </a></li>
+        </ul>
+
+       
+      </div>
+    </nav>
+  </header>
+    <div class="upper">My Project's</div>
+
+    <div class="main">
+        <ul>
+          <li><a href="Calculator.html">  <img src="calculator.png" alt="" /> Calculator Project</a></li>
+          <li><a href="tiktak.html" ><img src="TikTakToe.png" alt="" /> Tik Tak Toe Game</a></li>
+          <li><a href="st_pp_&_sc.html" ><img src="rock_paper_scissors_logo.jpg" alt="" /> Rock Paper Scissors Game</a></li>
+          <li><a href="currency_converter.html"> <img src="currency.png" alt="" />Currency Convertor Project</a></li>  
+          <li><a href="login.html" > <img src="login.png" alt="" />Login & signup page Project</a></li>
+        </ul>
+      </div>
+      <div class="button"> 
+      <button> <a href="portfolio.html">  Back  </a> </button>
+        </div>
+      <footer>
+        <div class="footer">
+          <div class="footer-first">
+           <h3> Nurul's Developer Portfolio</h3>  
+          </div>
+          <div class="footer-second">
+            <ul>
+              <li>Help</li>
+              <li>About</li>
+              <li>More</li>
+            </ul>
+          </div>
+          <div class="footer-third">
+            <ul>
+              <li>Instagram</li>
+              <li>Whatsapp</li>
+              <li>SnapChat</li>
+            </ul>
+          </div>
+          <div class="footer-fourth">
+            <ul>
+              <li>LinkedIn</li>
+              <li>CV</li>
+              <li>service</li>
+            </ul>
+          </div>
+          </div>
+          <div class="footer-rights">
+            Copyright &#169; nurulsportfolio.com | All rights reserved
+          </div>
+      </footer>
+</body>
+</html>

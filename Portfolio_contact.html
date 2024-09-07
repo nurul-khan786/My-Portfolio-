@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact</title>
+  </head>
+  <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: rgb(8, 8, 44);
+        color: white;
+        border: 5px solid rgba(102, 76, 9, 0.779);
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 90px;
+        background-color: rgb(17, 17, 54);
+        border: 5px double black;
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(86, 73, 51);
+        font-size: 1.03rem;
+      }
+      .left {
+        font-size: 1.6rem;
+        color: rgb(102, 121, 126);
+      }
+      
+     .button1 button{
+        width: 5.5rem;
+        height: 2.5rem;
+        border: 3px solid rgb(0, 0, 0);
+        background-color: gray;
+        color: beige;
+        border-radius: 20px;
+        margin-bottom: 25px;
+        margin-left: 90%;
+        
+      }
+      .button1 a{
+        text-decoration: none;
+        color: rgb(65, 16, 16);
+       
+      }
+      section{
+        padding-top: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 1.2rem;
+        font-family: 'Times New Roman', Times, serif;
+        color: antiquewhite;
+      }
+      #contact1 ul li{
+         list-style: none;
+      }
+      #contact2 ul li{
+         list-style: none;
+      }
+    .contactform {
+      font-family: "Fira Sans", sans-serif;
+      padding: 0 34px;
+      padding-top: 80px;
+    }
+    .contactform h1 {
+      font-family: "Source Code Pro", monospace;
+      padding-bottom: 50px;
+      color: #ba7233;
+    }
+    .contactform form div {
+      padding: 10px 0;
+      display: flex;
+      flex-direction: column;
+    }
+    .contactform form div input {
+      width: 26vw;
+      border-radius: 5px;
+      margin: 6px 0 0 0;
+      padding: 3px;
+    }
+
+    #emailHelp {
+      font-size: 10px;
+      color: rgb(58, 58, 134);
+      margin: 0 5px;
+      padding: 3px 0 0 0;
+    }
+    #form-check {
+      flex-direction: row;
+     color: rgb(195, 195, 196);
+    }
+    #form-check input {
+      width: 24px;
+      margin: 3px 0;
+    }
+    .btn{
+        width: 80px;
+        border-radius: 30px;
+    }
+    .btn-sn{
+        font-size: 14px;
+        padding: 10px 19px;
+        margin: 12px 0;
+        background-color: rgb(198, 198, 37);
+    }
+
+    footer{
+        background-color: #090619;
+      }
+      .footer{
+        display: flex;
+        padding: 23px 122px;
+        justify-content: space-evenly;
+      }
+      .footer ul{
+        list-style: none;
+        color: silver;
+      }
+      footer .footer-first{
+          font-size: 1.2rem;
+      }
+
+      .footer > div{
+        width: 223px;
+      }
+      footer .footer-rights{
+        color: gray;
+        text-align: center;
+        padding: 34px 0;
+      }
+  </style>
+
+  <body>
+    <header>
+      <nav>
+        <div class="left">Nurul's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="index.html">Home </a></li>
+            <li><a href="Portfolio_about.html">About Me </a></li>
+            <li><a href="Portfolio_services.html">Services </a></li>
+            <li><a href="Portfolio_projects.html">Projects </a></li>  
+            <li><a href="Portfolio_contact.html">Contact me </a></li>
+          </ul>
+
+         
+        </div>
+      </nav>
+    </header>
+         
+    <div class="main">
+      <div class="contactform">
+        <h1>Contact me for work & General Enquries</h1>
+        <form>
+          <div class="mb-3">
+            <label for="clientEmail" class="form-label">Name</label>
+            <input
+              type="name"
+              class="form-control"
+              id="clientEmail"
+              aria-describedby="emailHelp"
+            />
+            <div class="mb-3">
+                <label for="clientEmail" class="form-label">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="clientEmail"
+                  aria-describedby="emailHelp"
+                />
+            <div id="emailHelp" class="form-text">
+              We'll never share your email and & phone number with anyone else.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="clientphone" class="form-label">phone number</label>
+            <input type="phone" class="form-control" id="clientphone" />
+          </div>
+          <div class="mb-3">
+            <label for="clientphone" class="form-label">Enquiry</label>
+            <input type="phone" class="form-control" id="clientphone" />
+          </div>
+          <div class="mb-3" id="form-check">
+            <input type="checkbox" class="form-check-input" id="isClient" />
+            <label class="form-check-label" for="isClient"
+              >I want you to work on a project with me</label
+            >
+          </div>
+
+          <div class="btn">
+            <button type="submit" class="btn btn-sn">Submit</button>
+          </div> 
+        </form>
+      </div>
+
+      <section>  
+        <div id="contact1">  <ul> <li> Email     : noorulk321@gmail.com </li> 
+         </ul>
+        </div>
+        <div id="contact2"> <ul>  <li> Phone     : 9336399387 </li> </ul>
+        </div>
+        </section>
+
+        <div class="button1"> 
+          <button> <a href="portfolio.html">  Back  </a> </button>
+            </div>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+         <h3> Nurul's Developer Portfolio</h3>  
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li>Help</li>
+            <li>About</li>
+            <li>More</li>
+          </ul>
+        </div>
+        <div class="footer-third">
+          <ul>
+            <li>Instagram</li>
+            <li>Whatsapp</li>
+            <li>SnapChat</li>
+          </ul>
+        </div>
+        <div class="footer-fourth">
+          <ul>
+            <li>LinkedIn</li>
+            <li>CV</li>
+            <li>service</li>
+          </ul>
+        </div>
+        </div>
+        <div class="footer-rights">
+          Copyright &#169; nurulsportfolio.com | All rights reserved
+        </div>
+    </footer>
+      <script src="Portfolio_contact.js"> </script>
+  </body>
+</html>

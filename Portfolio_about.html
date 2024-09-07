@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: rgb(8, 8, 44);
+        color: white;
+        border: 5px solid rgba(102, 76, 9, 0.779);
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 90px;
+        background-color: rgb(17, 17, 54);
+        border: 5px double black;
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(86, 73, 51);
+        font-size: 1.03rem;
+      }
+      .left {
+        font-size: 1.6rem;
+        color: rgb(102, 121, 126);
+      }
+      .button1 button {
+        width: 5.5rem;
+        height: 2.3rem;
+        border: 3px solid rgb(0, 0, 0);
+        background-color: rgba(130, 131, 131, 0.682);
+        color: beige;
+        border-radius: 20px;
+        margin-bottom: 25px;
+        margin-left: 87%;
+        width: 5.5rem;
+      }
+      .button1 button a {
+        text-decoration: none;
+        color: rgb(65, 16, 16);
+      }
+      .aboutHeading {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .heading {
+        margin: 40px 20px 0 0;
+        margin-left: 70px;
+        color: #c07c41;
+        font-size: 2rem;
+        font-family: "Times New Roman", Times, serif;
+      }
+      .picture img {
+        width: 20%;
+        margin-left: 37rem;
+        border: 2.2px dotted rgb(218, 158, 18);
+        border-radius: 5%;
+      }
+      .introSection {
+        margin: 20px 20px 0 0;
+        margin-left: 70px;
+        font-size: 1.5rem;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      #element {
+        color: lightsteelblue;
+      }
+      .para {
+        margin: 30px 20px 0 0;
+        margin-left: 70px;
+        color: gray;
+        font-family: sans-serif;
+      }
+      .introSection2 {
+        color: rgb(182, 221, 219);
+        display: flex;
+        margin: 130px 0;
+        align-items: center;
+      }
+      .introSection2 #first ul {
+        list-style: none;
+        margin: 0 0 0 70px;
+      }
+      .introSection2 #first ul li {
+        font: 1.1rem sans-serif;
+      }
+      .introSection2 #second ul {
+        list-style: none;
+        margin: 0 0 0 270px;
+      }
+      .introSection2 #second ul li {
+        font: 1.1rem sans-serif;
+      }
+      #about ul li{
+        list-style: none;
+      }
+      #about h2{
+        margin-top: 20px;
+        margin-bottom: 6px;
+        color: rgb(113, 12, 64);
+      }
+      #about  p{
+        color: rgb(103, 138, 100);
+      }
+
+      .button2 .btn {
+        margin: 2px 0 20px 70px;
+        padding: 12px;
+        background-color: #cb8d3c;
+        color: rgb(23, 6, 6);
+        border: 3px solid rgba(123, 103, 103, 0.425);
+        border-radius: 12px;
+        font-size: 12px;
+      }
+      button a {
+        text-decoration: none;
+      }
+      footer {
+        background-color: #090619;
+      }
+      .footer {
+        display: flex;
+        padding: 23px 122px;
+        justify-content: space-evenly;
+      }
+      .footer ul {
+        list-style: none;
+        color: silver;
+      }
+      footer .footer-first {
+        font-size: 1.2rem;
+      }
+
+      .footer > div {
+        width: 223px;
+      }
+      footer .footer-rights {
+        color: gray;
+        text-align: center;
+        padding: 34px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav>
+          <div class="left">Nurul's Portfolio</div>
+          <div class="right">
+            <ul>
+              <li><a href="index.html">Home </a></li>
+              <li><a href="Portfolio_about.html">About Me </a></li>
+              <li><a href="Portfolio_services.html">Services </a></li>
+              <li><a href="Portfolio_projects.html">Projects </a></li>
+              <li><a href="Portfolio_contact.html">Contact me </a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <section class="aboutSection">
+        <div class="heading"><h1>About Me</h1></div>
+        <section class="aboutHeading">
+          <div class="introSection">
+            Hello, My name is <span class="red"> Nurul Khan. And I am a </span>
+            <span id="element"></span>
+          </div>
+          <div class="picture"><img src="image.jpg" /></div>
+        </section>
+
+        <div class="para">
+          <section id="about">
+            <p>  
+              An aspiring web developer with a Bachelor’s degree in Computer
+              Applications from Mahatma Gandhi Kashi Vidyapith University. My passion
+              for technology drives me to continuously improve my skills in java, DSA,
+              HTML, CSS, and JavaScript.
+            </br>  
+              Outside of my professional life, I am
+              passionate about Mix martial arts & Video games. I enjoy  play 
+              martial arts because it help me to make my body and mind more
+              active and focussed for my professional works. I am always keen 
+              to learn new things and take on challenges.
+            </p>
+         
+            <h2>Education</h2>
+            <p>
+              Currently pursuing my BCA from ,Mahatma Gandhi Kashi Vidyapith University
+              where I have gained a strong foundation in web development, data
+              structures, and programming principles.
+            </p>
+
+            <h2>Skills</h2>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Responsive Design</li>
+              <li>Java</li>
+              <li>DSA in java</li>
+            </ul>
+
+            <h2>Projects</h2>
+            <p>
+              I've worked on several personal projects, including a portfolio
+              website and a responsive blog template. You can check out my work
+              on the <a href="Portfolio_projects.html">Projects</a> page.
+            </p>
+
+            <h2>Career Goals</h2>
+            <p>
+              I’m eager to gain practical experience in web development and look
+              forward to contributing to innovative projects. My goal is to grow
+              as a developer and eventually specialize in front-end development.
+              I’m also looking for opportunities where I can contribute, grow, and 
+              make a meaningful impact. I am excited to bring my skills and enthusiasm 
+              to a dynamic team.
+            </p>
+
+            <h2>Contact</h2>
+            <p>
+              You can reach me at noorulk321@gmail.com or through my
+              <a href="['https://www.linkedin.com/in/nurul-khan-2b7a632b5/']"
+                >LinkedIn</a
+              >
+              profile.
+            </p>
+          </section>
+        </div>
+
+        <section class="introSection2">
+          <div id="first">
+            <ul>
+              <li>Birthday : 09 november 2002</li>
+              <li>Website : www.domain.com</li>
+              <li>Degree : BCA</li>
+              <li>Address : Khamaria Bhadohi</li>
+            </ul>
+          </div>
+
+          <div id="second">
+            <ul>
+              <li>Age : 21</li>
+              <li>Email : noorulk321@gmail.com</li>
+              <li>Phone : 9336399387</li>
+              <li>Freelance : Avaliable!</li>
+            </ul>
+          </div>
+        </section>
+
+        <div class="button2">
+          <button class="btn">
+            <a href="Resume (2).pdf"> Download Resume </a>
+          </button>
+        </div>
+      </section>
+
+      <div class="button1">
+        <button><a href="portfolio.html"> Back </a></button>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Nurul's Developer Portfolio</h3>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li>Help</li>
+            <li>About</li>
+            <li>More</li>
+          </ul>
+        </div>
+        <div class="footer-third">
+          <ul>
+            <li>Instagram</li>
+            <li>Whatsapp</li>
+            <li>SnapChat</li>
+          </ul>
+        </div>
+        <div class="footer-fourth">
+          <ul>
+            <li>LinkedIn</li>
+            <li>CV</li>
+            <li>service</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-rights">
+        Copyright &#169; nurulsportfolio.com | All rights reserved
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web developer."],
+        typeSpeed: 60,
+      });
+    </script>
+  </body>
+</html>
