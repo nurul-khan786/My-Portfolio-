@@ -45,7 +45,7 @@ I would like to express my gratitude to the following:
 
 ## 🖼️ Screenshot
 
-![Tic Tac Toe Screenshot]("C:\Users\nurul\OneDrive\Pictures\Screenshots\screenshot.png")
+![Tic Tac Toe game Screenshot](https://github.com/nurul-khan786/My-Portfolio-/blob/76894ed8c0be97a2b96a8358e56cbff38f1d12c5/screenshot.png)
 
 ---
 
